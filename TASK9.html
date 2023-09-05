@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+
+        .big-box {
+            width: 600px;
+            height: 600px;
+            background-color: #f2f2f2;
+            border: 1px solid black ;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 60px;
+            height: 240px;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+
+        .nav-button {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 5px;
+            border-radius: 20%;
+            margin-left: -20px;
+        }
+
+        .green-button {
+            background-color: green;
+        }
+
+        .blue-button {
+            background-color: blue;
+        }
+
+        .red-button {
+            background-color: red;
+        }
+
+        .black-button {
+            background-color: black;
+        }
+
+        .nav-button:hover {
+        transform: translateX(10px);
+        transition: transform 0.3s;
+        }
+
+        .text {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big-box">
+        <div class="container">
+            <a class="nav-button green-button" href="TASK1.html"></a>
+            <a class="nav-button blue-button" href="TASK2.html"></a>
+            <a class="nav-button red-button" href="TASK3.html"></a>
+            <a class="nav-button black-button" href="TASK4.html"></a>
+        </div>
+
+        <div class="text">
+            <h3>Hovarable Sidenav buttons</h3>
+            <p>Hover over te buttons in left side navigation to open them</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

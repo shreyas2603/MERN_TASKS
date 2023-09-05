@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .big-box {
+            width: 600px;
+            height: 450px;
+            background-color: yellow;
+            border: 1px dotted black;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 300px;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .nav-button {
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 5px;
+            background-color: white;
+            color:blue;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .nav-button::after {
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 100%;
+            background-color: black;
+            top: 0;
+            right: 0;
+        }
+
+        .nav-button:hover {
+            background-color: #f9f9f9;
+        }
+        
+
+
+        .text {
+            padding-left: 20px;
+        }
+        .line{
+            height: 1px;
+            background-color: #070707;
+            margin: 5px 0;
+            width : 400px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="big-box">
+    <div class="container">
+        <a class="nav-button" href="TASK1.html">Home Page</a>
+        <a class="nav-button" href="TASK2.html">Musings</a>
+        <a class="nav-button" href="TASK3.html">My Town</a>
+        <a class="nav-button" href="TASK4.html">Links</a>
+    </div>
+
+    <div class="text">
+        <h1 style="color: rgb(139, 69, 139);">My first Styled page</h1>
+        <h3 style="color: rgb(139, 69, 139);">Welcome to my first Styled page!</h3>
+        <h3 style="color: rgb(139, 69, 139);">It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</h3>
+        <h3 style="color: rgb(139, 69, 139);">There should be more here, but I don't know what yet.</h3>
+        <div class="line"></div>
+        <h3 style="color: rgb(139, 69, 139);">Made 5 April 2004 <br>
+            by myself.</h3>
+    </div>
+</div>
+
+</body>
+</html>
+
+

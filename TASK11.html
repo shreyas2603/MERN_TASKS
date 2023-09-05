@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 11</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .big-box {
+            width: 600px;
+            height: 450px;
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Change to column layout */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        .oval-container {
+            width: 150px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            background-color: #3498db; /* Background color of the oval */
+            border-radius: 50%; /* Create an oval shape */
+            overflow: hidden; /* Clip any content outside the oval */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for the image */
+        .oval-image {
+            width: 300px; /* Adjust the image size as needed */
+            height: 300px; /* Maintain the aspect ratio */
+        }
+
+        .login-form {
+            text-align: center;
+            margin-top: 20px; /* Add spacing between oval and form */
+        }
+
+        /* Style for the form fields and buttons */
+        .form-input {
+            margin: 10px 0;
+        }
+
+        /* Style for the forgot password link */
+        .forgot-password {
+            font-size: 14px;
+        }
+
+        /* Style for the input field labels */
+        .input-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-box">
+        <div class="oval-container">
+            <img class="oval-image" src="img2.png" alt="Your Photo">
+        </div>
+        <div class="login-form">
+            <form>
+                <div class="form-input">
+                    <label style="margin-left: -180px;" class="input-label" for="username">Username :</label>
+                    <br>
+                    <input style="width:250px" type="text" id="username" name="username" placeholder="Enter Username">
+                </div>
+        
+                <div class="form-input">
+                    <label style="margin-left: -180px;" class="input-label" for="password">Password :</label>
+                    <br>
+                    <input style="width:250px" type="password" id="password" name="password" placeholder="Enter Password">
+                </div>
+        
+                <div class="form-input">
+                    <input style="width:260px; background-color: orange;" type="submit" value="Login">
+                </div>
+        
+                <div class="form-input">
+                    <input style="margin-left: -130px;" type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+        
+                <div class="form-input">
+                    <input style="margin-left: -5px; background-color: red; margin-right: 100px;" type="button" value="Cancel">
+                    <a class="forgot-password" href="#">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
